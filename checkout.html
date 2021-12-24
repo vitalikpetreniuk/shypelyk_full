@@ -26,14 +26,6 @@
 
 	<link rel="stylesheet" href="css/main.min.css">
 
-	<script>
-		new PerformanceObserver((entryList) => {
-			for (const entry of entryList.getEntries()) {
-				console.log('LCP candidate:', entry.startTime, entry);
-			}
-		}).observe({type: 'largest-contentful-paint', buffered: true});
-	</script>
-
 </head>
 
 <body>
@@ -187,7 +179,7 @@
 
 									<div class="fields shipping-fields">
 										<p class="form-row form-row-wide address-field" id="shipping_country_field">
-											<select name="shipping_country" id="shipping_country" class="country_to_state" autocomplete="country">
+											<select name="shipping_country" id="shipping_country" class="checkout-select country_to_state" autocomplete="country">
 												<option value="">Країна</option>
 												<option value="UA">Україна</option>
 												<option value="PL">Польща</option>
@@ -198,7 +190,7 @@
 											</select>
 										</p>
 										<p class="form-row form-row-wide address-field" id="shipping_postoffice_field">
-											<select name="shipping_postoffice" id="shipping_postoffice" autocomplete="postoffice">
+											<select name="shipping_postoffice" id="shipping_postoffice" class="checkout-select" autocomplete="postoffice">
 												<option value="">Пошта</option>
 												<option value="new">Нова пошта</option>
 												<option value="ukr">Укрпошта стандарт</option>
@@ -206,7 +198,7 @@
 											</select>
 										</p>
 										<p class="form-row form-row-wide address-field" id="shipping_place_field">
-											<select name="shipping_place" id="shipping_place" autocomplete="place">
+											<select name="shipping_place" id="shipping_place" class="checkout-select" autocomplete="place">
 												<option value="">Спосіб доставки</option>
 												<option value="office">У відділення</option>
 												<option value="courier">Кур'єром</option>
@@ -232,7 +224,7 @@
 
 									<div class="fields payment-fields">
 										<p class="form-row form-row-wide payment" id="payment_wrapper">
-											<select name="payment_type" id="payment_type" autocomplete="payment">
+											<select name="payment_type" id="payment_type" class="checkout-select" autocomplete="payment">
 												<option value="">Спосіб оплати</option>
 												<option value="postoffice">При отриманні</option>
 												<option value="website">На сайті</option>
@@ -288,22 +280,12 @@
 									</div>
 								</div>
 
-								<div class="order-promocode">
-									<div class="promocode-line">
-										<span>скористатись промо кодом</span>
-									</div>
-									<div class="promocode-fields">
-										<input type="text" class="promocode" placeholder="введіть промо код">
-										<button>підтвердити</button>
-									</div>
-								</div>
-
-								<div class="chekout-finish">
-									<div class="order-discount">
+								<div class="checkout-finish">
+									<div class="order-finishing">
 										<h4>Знижка:</h4>
 										<strong><span class="woocommerce-Price-amount amount">0</span> UAH</strong>
 									</div>
-									<div class="order-total">
+									<div class="order-finishing">
 										<h4>До сплати:</h4>
 										<strong><span class="woocommerce-Price-amount amount">6400</span> UAH</strong>
 									</div>
@@ -534,6 +516,12 @@
 						<span class="title">На сайті</span>
 						<p class="info">
 							Оплатіть покупку зараз, за допомогою WAYFORPAY
+						</p>
+					</li>
+					<li data-value="moneysend">
+						<span class="title">Грошовий переказ</span>
+						<p class="info">
+							Тестова опція
 						</p>
 					</li>
 				</ul>
