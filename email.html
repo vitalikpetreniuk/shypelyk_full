@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style type="text/css">
+/* CLIENT-SPECIFIC STYLES */
+body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+img { -ms-interpolation-mode: bicubic; }
+
+/* RESET STYLES */
+img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+table { border-collapse: collapse !important; }
+body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; font-family: Verdana, Tahoma, sans-serif; }
+ul { list-style: none; list-style-type: none; padding: 0; margin: 0; }
+ul li {font-size: 14px !important;}
+    
+h1, h2, h3, h4, h5, p, strong, span, a
+{
+    font-family: Verdana, Tahoma, sans-serif !important;
+}
+
+/* iOS BLUE LINKS */
+a[x-apple-data-detectors] {
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+    h2
+    {
+    	color: #000000 !important;
+    }
+h3
+{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    
+    text-transform: uppercase;
+
+    margin: 0;
+    color: #000000 !important;
+}
+h4
+{
+    font-size: 16px !important;
+    font-weight: 400;
+    line-height: 18px;
+
+    margin: 0;
+    padding-bottom: 8px !important;
+    color: #000000 !important;
+}
+p
+{
+    font-size: 14px !important;
+    line-height: 17px;
+    margin: 0;
+
+    color: #616161;
+}
+p strong
+{
+	font-size: 14px !important;
+}
+
+.feedback-link
+{
+    display: block;
+    width: 244px;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+
+    color: #ffffff !important;
+    background: #000000;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+.feedback-link:hover
+{
+    background: #3f3f3f;
+}
+
+.shypelyk_inst
+{
+    text-align: center;
+}
+.shypelyk_inst li
+{
+    display: inline-block;
+    padding: 0;
+    margin-left: 0;
+}
+.shypelyk_inst li:not(:last-child)
+{
+    padding-right: 65px;
+}
+.shypelyk_inst li a
+{
+    display: inline-block;
+    padding-left: 24px;
+
+    text-decoration: none;
+    color: #000000;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    background: url('img/instagram.png') no-repeat left center;
+    background-size: 20px auto;
+}
+.subtotal li
+{
+    font-size: 14px;
+    line-height: 22px;
+}
+.subtotal li strong
+{
+    display: inline-block;
+    width: 100px;
+    text-transform: uppercase;
+}
+
+.total > span
+{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+
+    line-height: 48px;
+    font-size: 14px;
+    font-weight: 700;
+    
+    color: #000000 !important;
+}
+.total > span span
+{
+    text-transform: uppercase;
+}
+
+.item .info
+{
+    margin-top: 30px;
+}
+.item .info li
+{
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #616161;
+    margin: 0;
+    padding: 0
+}
+.item .info li span
+{
+    color: #000000;
+    font-weight: 500;
+}
+
+.item
+{
+    background: url('img/border.png') no-repeat center bottom;
+    background-size: auto 3px;
+}
+
+.footer
+{
+    border-bottom: 6px solid rgba(132, 132, 132, .25);
+}
+
+.total span,
+.subtotal li, .subtotal li strong
+{
+    color: #000000 !important;
+    font-size: 14px !important;
+}
+
+
+
+/* MOBILE STYLES */
+@media screen and (max-width: 600px) {
+  .img-max {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .max-width {
+    max-width: 100% !important;
+  }
+
+  .mobile-wrapper {
+    width: 85% !important;
+    max-width: 85% !important;
+  }
+
+  .mobile-padding {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+
+  .intro-img img
+  {
+      width: 100%;
+      height: auto;
+  }
+
+  .items
+  {
+      padding: 0 15px !important;
+  }
+  .item
+  {
+      display: block;
+      background-size: auto 2px;
+      padding-top: 15px;
+  }
+  .item:not(:first-child)
+  {
+      padding-top: 20px !important;
+  }
+  .item > td
+  {
+    display: block;
+    width: 100%;
+
+    padding: 0 0 20px !important;
+  }
+  .item > td:first-child
+  {
+      padding-bottom: 15px !important;
+  }
+  .item > td img
+  {
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+
+  .subtotal-td
+  {
+      padding: 0 15px 55px !important;
+  }
+  .subtotal-outer
+  {
+      padding-top: 20px !important;
+  }
+
+  .total > table
+  {
+      max-width: none !important;
+  }
+  .feedback-link
+  {
+      width: 100%;
+  }
+
+  .header
+  {
+      padding: 20px 0 15px !important;
+  }
+  .intro-img
+  {
+      display: block;
+      max-height: 60vw;
+      max-height: 125vw;
+      overflow: hidden;
+  }
+  .intro-img img
+  {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .delivery-info
+  {
+      display: block;
+      text-align: center;
+  }
+  .delivery-info .delivery-info-item
+  {
+      display: block;
+      width: 100% !important;
+      padding: 0 !important;
+  }
+  .delivery-info .delivery-info-item h4
+  {
+      padding-top: 0 !important;
+      margin-top: 30px;
+  }
+
+  .shypelyk_inst
+  {
+      margin-bottom: 20px;
+  }
+  .shypelyk_inst li
+  {
+      display: block;
+  }
+  .shypelyk_inst li
+  {
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+  }
+
+  .shypelyk_inst + p
+  {
+      padding-top: 0 !important;
+      line-height: 1;
+  }
+
+  .footer
+  {
+      padding-top: 100px !important;
+      padding-bottom: 10px !important;
+  }
+  .footer-outer
+  {
+      padding-bottom: 50px !important;
+  }
+    
+    .details
+    {
+        padding-top: 0 !important;
+    }
+    
+    .info li span
+    {
+    	font-size: 14px !important;
+    }
+    
+    .overlap
+    {
+    	margin-top: -44px !important;
+        position: relative !important;
+        z-index: 9999 !important;
+    }
+
+}
+
+/* ANDROID CENTER FIX */
+div[style*="margin: 16px 0;"] { margin: 0 !important; }
+</style>
+
+</head>
+<body style="margin: 0 !important; padding: 0; !important background-color: #ffffff;" bgcolor="#ffffff">
+
+<!-- HIDDEN PREHEADER TEXT -->
+<div class="litmus-builder-preview-text" style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Lorem ipsum dolor sit amet		&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbhttps://www.diversolondon.com/products/cotton-wool-twin-trim-shirt_steelbluesp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>
+
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td class="header" align="center" valign="top" width="100%" background="bg.jpg" bgcolor="#3b4a69" style="background: #BFD2EE; padding: 40px 15px 29px;" class="mobile-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+            <tr>
+            <td align="center" valign="top" width="600">
+            <![endif]-->
+            <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+                <tr>
+                    <td align="center" valign="top" style="padding: 0;">
+                        <img src="img/logo.png" alt="SHYPELYK" width="165" height="60" border="0" style="display: block;">
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" width="100%" background="bg.jpg" bgcolor="#3b4a69" style="background: #BFD2EE;">
+            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+            <tr>
+            <td align="center" valign="top" width="600">
+            <![endif]-->
+            <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+                <tr>
+                    <td class="intro-img" align="center" valign="top" style="padding: 0;">
+                        <img src="img/DSC_7635.jpeg" alt="Дівчина" width="600" border="0" style="display: block;">
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td align="center" height="100%" valign="top" width="100%" bgcolor="#BFD2EE" style="background-color: #BFD2EE;" class="mobile-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="550">
+            <tr>
+            <td align="center" valign="top" width="550">
+            <![endif]-->
+            <div class="overlap" style="margin-top: 30px;">
+                <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+                    <tr>
+                        <td align="center" valign="top" style="padding: 0; font-family: Verdana, Tahoma, sans-serif;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" bgcolor="#ffffff" style="border-radius: 0 0 3px 3px; padding: 50px 15px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td align="center" style="font-family: Verdana, Tahoma, sans-serif; padding-bottom: 35px;">
+                                                    <h5 style="font-size: 14px; font-weight: normal; line-height: 1; text-transform: uppercase; color: #444444; margin: 0; padding-bottom: 6px;">Привіт, Василина!</h5>
+                                                    <h2 style="font-size: 24px; line-height: 30px; letter-spacing: .5px; font-weight: 700; color: #000000; margin: 0;">Дякуємо за твоє замовлення!</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding: 0;">
+                                                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" style="max-width:364px; border: 1px solid #000000;">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <p style="color: #000000; font-size: 16px; line-height: 19px; margin: 0; padding: 18px 15px;">
+                                                                    Дата замовлення: 20.12.2021<br>
+                                                                    Замовлення <strong>№400</strong>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details" align="center" style="padding: 34px 0 0 0;">
+                                                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" style="max-width:364px;">
+                                                        <tr class="delivery-info">
+                                                            <td class="delivery-info-item" valign="top" width="50%" style="padding-right: 13px; box-sizing: border-box;">
+                                                                <h4>Деталі доставки:</h4>
+                                                                <p>Василина Герасимчук<br>
+                                                                    0202 вул. Рівненська<br>
+                                                                    Луцьк, 43024
+                                                                </p>
+
+                                                                <h4 style="padding-top: 11px;">Оплата:</h4>
+                                                                <p>При отриманні</p>
+                                                            </td>
+                                                            <td class="delivery-info-item" valign="top" width="50%" style="padding-left: 13px; box-sizing: border-box;">
+                                                                <h4>Коментар:</h3>
+                                                                <p>Запакувати, як подарунок</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                        </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td align="center" height="100%" valign="top" width="100%" bgcolor="#BFD2EE" style="background-color: #BFD2EE; padding: 35px 0 30px; line-height: 24px;" class="mobile-padding">
+            <h3>Що всередині?</h3>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" height="100%" valign="top" width="100%" style="background-color: #BFD2EE;" class="mobile-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="550">
+            <tr>
+            <td align="center" valign="top" width="550">
+            <![endif]-->
+            <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+                <tr>
+                    <td align="center" valign="top" style="padding: 0; font-family: Verdana, Tahoma, sans-serif;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="items" bgcolor="#ffffff" style="padding: 5px 50px 0;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr class="item">
+                                            <td width="50%" valign="top" style="padding: 60px 13px 60px 0;">
+                                                <img src="img/DSC_7491.jpeg" alt="Ковдра" width="180" border="0" style="display: block;">
+                                            </td>
+                                            <td width="50%" valign="top" style="padding: 60px 0 60px 13px;">
+                                                <h2 style="margin: 0 0 20px;">Ковдра</h2>
+                                                <p class="description" style="font-size: 14px; line-height: 18px; color: #616161;">Водовіштовхуюча / утеплена / можна одягнути як жилетку, можна використовувати як плед.</p>
+                                                <ul class="info">
+                                                    <li><span>Колір/розмір:</span> небесний / one size</li>
+                                                    <li><span>Кількість:</span> 1</li>
+                                                    <li><span>Ціна:</span> 1900 uah</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr class="item">
+                                            <td width="50%" valign="top" style="padding: 60px 13px 60px 0;">
+                                                <img src="img/DSC_7525.jpeg" alt="Бомбер" width="180" border="0" style="display: block;">
+                                            </td>
+                                            <td width="50%" valign="top" style="padding: 60px 0 60px 13px;">
+                                                <h2 style="margin: 0 0 20px;">Бомбер</h2>
+                                                <p class="description" style="font-size: 14px; line-height: 18px; color: #616161;">Пуховик unisex / для двох / наповнений силіконізованим пухом / до -30* / двохсторонній / на кнопках / внизу є фіксатори / рукав має внутрішній манжет на резинці</p>
+                                                <ul class="info">
+                                                    <li><span>Колір/розмір:</span> XL / бузковий</li>
+                                                    <li><span>Кількість:</span> 1</li>
+                                                    <li><span>Ціна:</span> 4600 uah</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="subtotal-td" align="center" bgcolor="#ffffff" style="padding: 0 50px 30px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td class="subtotal-outer" align="right" style="padding-top: 38px;">
+                                                <ul class="subtotal">
+                                                    <li>Вартість товарів: <strong>6500 uah</strong></li>
+                                                    <li>Доставка: <strong>120 uah</strong></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="total" align="center" style="padding-top: 38px;">
+                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 244px;">
+                                                    <tr>
+                                                        <td class="total" align="center" width="100%" style="max-width: 244px;">
+                                                            <span>Всього: <span>6620 uah</span></span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                    </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td align="center" height="100%" valign="top" width="100%" style="background-color: #BFD2EE;" class="mobile-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="550">
+            <tr>
+            <td align="center" valign="top" width="550">
+            <![endif]-->
+            <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+                <tr>
+                    <td align="center" valign="top" style="padding: 0; font-family: Verdana, Tahoma, sans-serif;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td align="center" bgcolor="#F3F3F3" style="border-radius: 0 0 3px 3px; padding: 30px 15px 35px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center" style="font-family: Verdana, Tahoma, sans-serif; padding-bottom: 15px;">
+                                                <p style="line-height: 22px; font-style: italic;">Ми будемо раді почути про те,<br>
+                                                    як ти дізналася про нас
+                                                </p>
+                                                <p style="line-height: 22px; font-size: 23px; padding-top: 10px;">❤️</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="font-family: Verdana, Tahoma, sans-serif;">
+                                                <a class="feedback-link" href="https://shypelyk.com/feedback" target="_blank">Залишити відгук</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                    </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td align="center" height="100%" valign="top" width="100%" style="background-color: #BFD2EE; padding-bottom: 155px;" class="mobile-padding footer-outer">
+            <!--[if (gte mso 9)|(IE)]>
+            <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="550">
+            <tr>
+            <td align="center" valign="top" width="550">
+            <![endif]-->
+            <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+                <tr>
+                    <td class="footer" align="center" bgcolor="#ffffff" style="padding: 112px 15px 25px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td align="center">
+                                    <ul class="shypelyk_inst">
+                                        <li style="padding-right: 60px;"><a href="https://www.instagram.com/shypelyk/" target="_blank">@shypelyk</a></li>
+                                        <li><a href="https://www.instagram.com/shypelyk_basic/" target="_blank">@shypelyk_basic</a></li>
+                                    </ul>
+                                    <p style="color: #BDBDBD; padding-top: 11px;">Shypelyk 2022©. Всі права захищені</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
